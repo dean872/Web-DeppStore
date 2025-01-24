@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: rgba(127, 255, 212, 0.425);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* Navbar */
+.nav-container {
+    display: flex;
+    width: 100%;
+    background-color: aquamarine;
+    height: 70px;
+    box-sizing: border-box;
+    position: sticky;
+}
+nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+nav input,label {
+    display: none;
+}
+.navbar {
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li a {
+    height: 100%;
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;
+    line-height: 60px;
+    color: rgba(0, 0, 0, 0.555);
+    font-weight: bolder;
+}
+.navbar ul li a:hover {
+    background-color: antiquewhite;
+    color: rgba(0, 0, 0, 0.692);
+}
+/* Hero image and text */
+#container-heroImage {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Untitled\ design.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+  padding: 10px;
+width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: rgba(127, 255, 212, 0.555);
+    text-shadow:  0 0 2px #fff;
+}
+.text h1 {
+    margin-bottom: 10px;
+}
+#container-heroImage button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: greenyellow;
+    font-weight: bold;
+}
+#container-heroImage button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#container-heroImage button:hover {
+    background-color: white;
+}
+/* About */
+#about-container {
+    margin: 50px auto;
+    width: 80%;
+}
+#about-container h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.about-flex {
+    display: flex;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.about-teks,.about-img {
+    width: 50%; 
+    margin: 15px;
+}
+.about-img img {
+    width: 100%;
+    object-fit: cover;
+}
+.about-teks p {
+    line-height: 30px;
+    text-align: justify;
+}
+/* Produk/product */
+#container-product {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header-product {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.header-product p{
+    font-size: large;
+    font-weight: bold;
+}
+.product-flex {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.product-flex h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.product-flex:hover {
+background-color: aquamarine;
+border-radius: 10px;
+}
+.product-flex p {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.product-flex img {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+/* Catalog */ 
+#container-catalog {
+    width: 100%;
+    margin: 70px auto;
+}
+#container-catalog hr {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+/* catalog sayur */
+#catalog-sayur {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pilihan-sayur {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: 0.7s ease;
+}
+.pilihan-sayur:hover {
+    background-color: rgba(0, 0, 0, 0.192);
+}
+.pilihan-sayur h4 {
+    text-align: center;
+}
+.pilihan-sayur img {
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.pilihan-sayur p {
+    text-align: center;
+}
+.buton-buy {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.buton-buy button {
+    padding: 10px;
+   border-radius: 5px;
+   border: none;
+   background-color: aquamarine;
+   cursor: pointer;
+}
+.buton-buy button:hover {
+    background-color: rgb(45, 94, 77);
+    color: white;
+}
+/* catalog daging */
+#catalog-daging {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pilihan-daging {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: 0.7s ease;
+}
+.pilihan-daging:hover {
+    background-color: rgba(0, 0, 0, 0.192);
+}
+.pilihan-daging h4 {
+    text-align: center;
+}
+.pilihan-daging img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.pilihan-daging p {
+    text-align: center;
+}
+/* catalog buah */
+#catalog-buah {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pilihan-buah {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: 0.7s ease;
+}
+.pilihan-buah:hover {
+    background-color: rgba(0, 0, 0, 0.192);
+}
+.pilihan-buah h4 {
+    text-align: center;
+}
+.pilihan-buah img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.pilihan-buah p {
+    text-align: center;
+}
+/* catalog snack */
+#catalog-snack {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pilihan-snack {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: 0.7s ease;
+}
+.pilihan-snack:hover {
+    background-color: rgba(0, 0, 0, 0.192);
+}
+.pilihan-snack h4 {
+    text-align: center;
+}
+.pilihan-snack img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.pilihan-snack p {
+    text-align: center;
+}
+/* catalog drink */
+#catalog-drink {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pilihan-drink {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: 0.7s ease;
+}
+.pilihan-drink:hover {
+    background-color: rgba(0, 0, 0, 0.192);
+}
+.pilihan-drink h4 {
+    text-align: center;
+}
+.pilihan-drink img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.pilihan-drink p {
+    text-align: center;
+}
+/* catalog nuts */
+#catalog-nuts {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pilihan-nuts {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: 0.7s ease;
+}
+.pilihan-nuts:hover {
+    background-color: rgba(0, 0, 0, 0.192);
+}
+.pilihan-nuts h4 {
+    text-align: center;
+}
+.pilihan-nuts img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.pilihan-nuts p {
+    text-align: center;
+}
+.contact-container {
+    margin: 50px auto;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.contact-container .kontak1 {
+width: 50%;
+height: 50px;
+display: flex;
+flex-direction: row;
+}
+.kontak1 img {
+    width: 30px;
+    height: 30px;
+}
+
+
+@media screen and (max-width:768px) {
+    .nav-container {
+        width: 100%;
+    }
+    .logo {
+        margin-right: 5px;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul li a {
+        display: block;
+        border-bottom: 1px solid black;
+    }
+   nav label  {
+        display: flex;
+        margin-left: 10px;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    nav input {
+        display: none;
+    }
+    .navbar {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        background-color: aquamarine;
+        transform: translateY(-100%); 
+        transition: transform 1s ease;
+    }
+    nav input[type=checkbox]:checked ~ .navbar {
+        display: flex;
+        transform: translateY(0);
+    }
+    .about-flex {
+        flex-direction: column;
+    }
+    .about-img,.about-teks {
+        width: auto;
+    }
+    .about-teks p {
+        line-height: 20px;
+    }
+    #container-product {
+        width: 100%;
+    }
+    .product-flex {
+        width: 50%;
+    }
+    .pilihan-buah {
+        width: 50%;
+    }
+    .pilihan-daging {
+        width: 50%;
+    }
+    .pilihan-sayur {
+        width: 50%;
+    }
+    .pilihan-snack {
+        width: 50%;
+    }
+    .pilihan-drink {
+        width: 50%;
+    }
+    .pilihan-nuts {
+        width: 50%;
+    }
+    .contact-container {
+        width: 100%;
+    }
+    .contact-container h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:426px) {
+    .product-flex {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .pilihan-buah {
+        width: auto;
+    }
+    .pilihan-daging {
+        width: auto;
+    }
+    .pilihan-sayur {
+        width: auto;
+    }
+    .pilihan-snack {
+        width: auto;
+    }
+    .pilihan-drink {
+        width: auto;
+    }
+    .pilihan-nuts {
+        width: auto;
+    }
+}
